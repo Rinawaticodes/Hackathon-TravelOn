@@ -1,4 +1,8 @@
+
+import Navbar from "./components/Navbar";
+
 import { useEffect, useState } from "react";
+
 import Hotel from "./pages/Hotel";
 import "./App.css";
 
@@ -15,6 +19,7 @@ function App() {
   console.warn(cityData);
   return (
     <div className="App">
+      <Navbar />
       <Hotel />
     </div>
   );

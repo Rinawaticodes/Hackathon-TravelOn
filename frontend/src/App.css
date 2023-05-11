@@ -1,3 +1,4 @@
+
 /*         Css Card             */
 
 .card {
@@ -18,4 +19,44 @@
   width: 20rem;
   height: 15rem;
   border-radius: 15px;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: aqua;
+}
+/* Navbar*/
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+  color: black;
+  background-color: white;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+img {
+  margin: 0 2rem;
+  width: 150px;
+  height: 75px;
+}
+
+.buttoncontainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2rem;
+}
+.button {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  width: 100px;
+  height: 50px;
+  border-radius: 25%;
 }

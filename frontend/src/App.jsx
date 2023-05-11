@@ -1,5 +1,8 @@
 import Card from "./components/Card";
 import Hotel from "./pages/Hotel";
+import Navbar from "./components/Navbar";
+
+import { useEffect, useState } from "react";
 
 import "./App.css";
 
@@ -21,8 +24,20 @@ const hotelList = [
 function App() {
   const hotel = hotelList[0];
 
+  const [cityData, setCityData] = useState([]);
+
+  useEffect(() => {
+    fetch(`http://localhost:5000/`)
+      .then((resp) => resp.json())
+      .then((data) => {
+        setCityData(data);
+      });
+  }, []);
+  console.warn(cityData);
+
   return (
     <div className="App">
+      <Navbar />
       <Hotel />
       <Card hotel={hotel} />
     </div>

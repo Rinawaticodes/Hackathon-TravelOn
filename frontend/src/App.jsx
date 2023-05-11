@@ -1,3 +1,4 @@
+import Hotel from "./pages/Hotel";
 import { useState, useEffect } from "react";
 import Home from "./pages/Home";
 
@@ -17,12 +18,6 @@ function App() {
   return (
     <div className="App">
       <Home />
-      <ul>
-        {destinations.map((destination) => (
-          <li key={destination.id}>{destination.name}</li>
-        ))}
-      </ul>
-
       <p>coucou</p>
     </div>
   );

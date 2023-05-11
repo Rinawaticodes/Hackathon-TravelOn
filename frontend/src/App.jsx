@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Hotel from "./pages/Hotel";
-import SearchBar from "./pages/SearchBar";
+import SearchBar from "./components/SearchBar";
 import Navbar from "./components/Navbar";
 
 import "./App.css";
@@ -37,8 +37,8 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar />
       <Navbar />
+      <SearchBar />
       <Hotel />
       <Card hotel={hotel} />
     </div>

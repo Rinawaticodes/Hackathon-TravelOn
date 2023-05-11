@@ -1,3 +1,24 @@
+/*         Css Card             */
+
+.card {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  border-radius: inherit;
+  box-shadow: inherit;
+  border: 2px solid black;
+}
+
+.cardHeader {
+  border: 2px solid red;
+}
+
+.card img {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 15px;
+}
 * {
   margin: 0;
   padding: 0;

@@ -1,8 +1,7 @@
+import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Hotel from "./pages/Hotel";
 import Navbar from "./components/Navbar";
-
-import { useEffect, useState } from "react";
 
 import "./App.css";
 

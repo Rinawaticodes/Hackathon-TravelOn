@@ -1,18 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:wght@100&display=swap");
-/*         Css Card             */
 
-.card {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  background-color: white;
-  border-radius: inherit;
-  box-shadow: inherit;
-  border: 2px solid black;
-}
-.cardHeader {
-  border: 2px solid red;
-}
 /* Root*/
 * {
   margin: 0;
@@ -55,7 +42,6 @@
   cursor: pointer;
   text-decoration: none;
 }
-
 /*background image */
 .hero {
   width: 100%;
@@ -94,6 +80,7 @@ img {
   flex-direction: column;
   padding: 0 1.5rem;
 }
+
 label {
   font-size: 1.1rem;
   display: flex;
@@ -106,6 +93,9 @@ input {
   text-align: center;
   color: black;
   height: 30px;
+}
+body {
+  background-color: rgb(88, 134, 226);
 }
 button {
   padding: 1rem;

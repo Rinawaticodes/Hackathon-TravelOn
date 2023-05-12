@@ -6,10 +6,16 @@ function Trip({ cityDatas }) {
       <figure className="tripBox">
         <figcaption>{cityData.name}</figcaption>
         <img src={cityData.photo_url} alt={cityData.name} />
-        <div>
-          <p>Vous ète à {cityData.distance}</p> <br />
+        <div className="tripLink">
+          <p>Vous êtes à {cityData.distance}</p> <br />
           <p>{cityData.description}</p> <br />
-          <button type="button">Reservation</button>
+          <a
+            href={`${cityData.link_url}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Reservation
+          </a>
         </div>
       </figure>
     </li>

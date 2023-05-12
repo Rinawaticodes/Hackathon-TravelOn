@@ -5,7 +5,7 @@ import beach from "../assets/beach.jpeg";
 function SearchBar({ setCity, setSwitchHotel }) {
   const [la, setLa] = useState("");
   return (
-    <div className="Hero">
+    <div className="hero">
       <img src={beach} alt="" />
       <div className="heroText">
         <h1>Keep Wild and Travel On</h1>

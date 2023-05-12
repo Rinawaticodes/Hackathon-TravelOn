@@ -20,7 +20,6 @@ function App() {
           setCityDatas(data.sort(() => Math.random() - 0.5).slice(0, 3));
       });
   }, [city]);
-
   return (
     <div className="App">
       <Navbar />

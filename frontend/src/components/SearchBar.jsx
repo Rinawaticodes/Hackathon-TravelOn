@@ -2,7 +2,7 @@ import { useState } from "react";
 import PropTypes from "prop-types";
 import beach from "../assets/beach.jpeg";
 
-function SearchBar({ setCity }) {
+function SearchBar({ setCity, setSwitchHotel }) {
   const [la, setLa] = useState("");
   return (
     <div className="hero">
@@ -29,7 +29,10 @@ function SearchBar({ setCity }) {
           <button
             className="buttonSearchBar"
             type="button"
-            onClick={() => setCity(la)}
+            onClick={() => {
+              setCity(la);
+              setSwitchHotel(true);
+            }}
           >
             Rechercher
           </button>
@@ -47,6 +50,7 @@ SearchBar.propTypes = {
     description: PropTypes.string.isRequired,
     id: PropTypes.number.isRequired,
   }).isRequired,
+  setSwitchHotel: PropTypes.func.isRequired,
 };
 
 export default SearchBar;

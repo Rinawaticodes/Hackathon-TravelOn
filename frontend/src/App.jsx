@@ -3,6 +3,9 @@ import Card from "./components/Card";
 import Hotel from "./pages/Hotel";
 import SearchBar from "./components/SearchBar";
 import Navbar from "./components/Navbar";
+import Trip from "./components/Trip";
+import SearchBar from "./components/SearchBar";
+import Footer from "./components/Footer";
 
 import "./App.css";
 
@@ -39,8 +42,10 @@ function App() {
     <div className="App">
       <Navbar />
       <SearchBar />
+      <Trip />
       <Hotel />
       <Card hotel={hotel} />
+      <Footer />
     </div>
   );
 }

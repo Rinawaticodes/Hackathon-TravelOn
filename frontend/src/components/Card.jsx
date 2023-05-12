@@ -9,7 +9,7 @@ function Card({ hotel }) {
       </div>
       <div className="cardBody">
         <p>
-          Vous ète à {hotel.distance} de afiche le input
+          Vous ètes à {hotel.distance} de afiche le input
           <p>{hotel.description}</p>
         </p>
         <button type="button">Reservation</button>

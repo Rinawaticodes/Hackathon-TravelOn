@@ -8,19 +8,20 @@ import "./App.css";
 
 function App() {
   const [cityDatas, setCityDatas] = useState([]);
+  const [city, setCity] = useState("");
 
   useEffect(() => {
     fetch(`${import.meta.env.VITE_BACKEND_URL}`)
       .then((resp) => resp.json())
       .then((data) => {
-        setCityDatas(data.slice(0, 3));
+        if (data) setCityDatas(data.slice(0, 3));
       });
-  }, []);
+  }, [city]);
 
   return (
     <div className="App">
       <Navbar />
-      <SearchBar />
+      <SearchBar setCity={setCity} />
       <div className="trip">
         <div className="triptext">
           <h1>Ville Populaire</h1>
@@ -35,6 +36,17 @@ function App() {
           <Trip cityDatas={cityDatas} />
         </div>
       </div>
+      {cityDatas.map((item) => (
+        <li key={item.id}>
+          <p>{item.name}</p>
+          <p>{item.adress}</p>
+          <p>{item.note}</p>
+          <p>{item.description}</p>
+          <p>{item.photo_url}</p>
+          <p>{item.link}</p>
+          <p>{item.distance}</p>
+        </li>
+      ))}
       <Footer />
     </div>
   );

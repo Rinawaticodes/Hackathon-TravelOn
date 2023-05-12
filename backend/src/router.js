@@ -151,7 +151,9 @@ const hotelList = [
 router.get("/", (req, res) => {
   res.json(hotelList);
 });
-
+router.get("/", (req, res) => {
+  res.json([]);
+});
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);

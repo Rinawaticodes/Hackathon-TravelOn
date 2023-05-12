@@ -1,18 +1,15 @@
-import TravelOne from "../images/TravelOne.png";
-
 function Navbar() {
   return (
-    <div className="header">
-      <img src={TravelOne} alt="Logo" id="logo" />
-      <div className="buttoncontainer">
-        <button className="button" type="button">
-          Voyages
-        </button>
-        <button className="button" type="button">
-          Se connecter
-        </button>
+    <nav className="NavbarItems">
+      <div className="navbarLogo">
+        <h1>TravelON</h1>
       </div>
-    </div>
+      <ul className="navbarMenu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
   );
 }
 

@@ -7,7 +7,7 @@ function Trip({ cityDatas }) {
         <figcaption>{cityData.name}</figcaption>
         <img src={cityData.photo_url} alt={cityData.name} />
         <div>
-          <p>Vous ète à {cityData.distance} de afiche le input</p> <br />
+          <p>Vous ète à {cityData.distance}</p> <br />
           <p>{cityData.description}</p> <br />
           <button type="button">Reservation</button>
         </div>

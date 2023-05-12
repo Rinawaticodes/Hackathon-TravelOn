@@ -6,7 +6,7 @@ function App() {
   const [cities, setCities] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5002/Paris`)
+    fetch(`http://localhost:5002/Rome`)
       .then((resp) => resp.json())
       .then((data) => {
         setCities(data);

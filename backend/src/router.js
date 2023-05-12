@@ -4,7 +4,7 @@ const router = express.Router();
 
 const itemControllers = require("./controllers/itemControllers");
 
-const Paris = [
+const Rome = [
   {
     id: "6",
     name: "INN AT THE ROMAN FORUM, THE",
@@ -103,8 +103,8 @@ const Paris = [
   },
 ];
 
-router.get("/Paris", (req, res) => {
-  res.send(Paris);
+router.get("/Rome", (req, res) => {
+  res.send(Rome);
 });
 
 router.get("/", (req, res) => {

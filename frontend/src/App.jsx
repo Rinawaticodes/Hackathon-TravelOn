@@ -26,7 +26,7 @@ function App() {
       <SearchBar setCity={setCity} siwtchHotel={setSwitchHotel} />
       <div className="trip">
         <div className="triptext">
-          <h1>Hotels Populaires</h1>
+          <h1 className="phrase">Hotels Populaires</h1>
         </div>
         <div className="tripCard">
           {switchHotel === false ? (

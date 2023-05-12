@@ -13,7 +13,7 @@ function Card({ cityDatas }) {
           />
         </div>
         <div className="cardBody">
-          <p>Vous ète à {cityData.distance} de afiche le input</p> <br />
+          <p>Vous etes à {cityData.distance} </p> <br />
           <p>{cityData.description}</p> <br />
           <button type="button">Reservation</button>
         </div>

@@ -29,7 +29,6 @@ function App() {
       <ul className="hotel-list" id="hotel-list">
         <Card cityDatas={cityDatas} />
       </ul>
-      <Card hotel={hotel} />
       <Footer />
     </div>
   );

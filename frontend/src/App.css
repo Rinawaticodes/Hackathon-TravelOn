@@ -1,6 +1,7 @@
 /*         Css Card             */
 
 .card {
+  display: flex;
   width: 20%;
   height: auto;
   margin-bottom: 0.5rem;

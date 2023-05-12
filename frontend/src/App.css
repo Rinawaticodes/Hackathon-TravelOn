@@ -172,7 +172,6 @@ body {
   font-size: 2rem;
 }
 
-
 .buttoncontainer {
   display: flex;
   justify-content: flex-end;
@@ -183,4 +182,7 @@ body {
 /* bar rechercher*/
 .dataResult {
   display: none;
+}
+h1 {
+  color: #ffffff;
 }

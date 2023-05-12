@@ -1,14 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Poppins:wght@100&display=swap");
-/*         Css Card             */
-.card {
-  width: 100%;
-  height: auto;
-  margin-bottom: 0.5rem;
-  background-color: white;
-  border-radius: inherit;
-  box-shadow: inherit;
-  border: 2px solid black;
-}
 /* Root*/
 * {
   margin: 0;
@@ -50,9 +40,6 @@
   color: black;
   cursor: pointer;
   text-decoration: none;
-}
-.cardHeader {
-  border: 2px solid red;
 }
 /*background image */
 .Hero {
@@ -109,7 +96,6 @@ input {
 body {
   background-color: rgb(88, 134, 226);
 }
-
 
 /* Navbar*/
 .header {

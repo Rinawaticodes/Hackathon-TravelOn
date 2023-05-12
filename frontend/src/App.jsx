@@ -27,13 +27,6 @@ function App() {
       <div className="trip">
         <div className="triptext">
           <h1>Hotels Populaires</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-            necessitatibus illum ducimus excepturi molestias, quasi culpa
-            quisquam sunt incidunt, ex quo veritatis eos nihil aliquid esse
-            harum at tenetur maxime?
-          </p>
-          <h1>Hotels Populaires</h1>
         </div>
         <div className="tripCard">
           {switchHotel === false ? (

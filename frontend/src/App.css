@@ -156,6 +156,18 @@ button {
   margin-top: 10px;
   text-align: justify;
 }
+.tripLink a {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  background-color: #4361ee;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  list-style: none;
+}
 /*footer*/
 .footer {
   padding: 4rem 6rem;
@@ -182,7 +194,6 @@ button {
   margin-left: 1rem;
   font-size: 2rem;
 }
-
 
 .buttoncontainer {
   display: flex;

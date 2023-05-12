@@ -14,7 +14,7 @@ const paris = [
       "Situé dans une rue arborée du 16e arrondissement, cet hôtel simple se trouve à 1 minute à pied de la station de métro Trocadéro, à 14 minutes de la tour Eiffel et à 2 km de l'Arc de Triomphe.",
     photo_url:
       "https://images.bestwestern.com/bwi/brochures/93261/photos/1024/15587616.jpg",
-    link: "https://www.hotelautrocadero.com/",
+    link_url: "https://www.hotelautrocadero.com/",
     distance: "0.800 km",
   },
   {
@@ -26,7 +26,7 @@ const paris = [
       "Situé à 5 minutes à pied de la station de métro Madeleine, cet hôtel haut de gamme se trouve respectivement à 9 minutes et 10 minutes de marche de la gare Saint-Lazare et de la place de la concorde",
     photo_url:
       "https://ak-d.tripcdn.com/images/220o0u000000j5rnrC623_R_960_660_R5_D.jpg",
-    link: "https://www.hotelwaldorftrocadero.com/",
+    link_url: "https://www.hotelwaldorftrocadero.com/",
     distance: "1km",
   },
   {
@@ -38,7 +38,8 @@ const paris = [
       "Cet appart'hôtel contemporain se situe juste en face de la station de métro La Motte-Picquet - Grenelle, à 7 minutes à pied du Champ-de-Mars et à 1,5 km de la tour Eiffel.",
     photo_url:
       "https://cf.bstatic.com/xdata/images/hotel/max500/365801403.jpg?k=d8cfef2ec7e0ee41a97c07f6b210e12710a331a6e351d76cbad3870d3f448b2d&o=&hp=1",
-    link: "https://www.booking.com/hotel/fr/citadines-aparthotel-tour-eiffel.fr.html",
+    link_url:
+      "https://www.booking.com/hotel/fr/citadines-aparthotel-tour-eiffel.fr.html",
     distance: "1km",
   },
   {
@@ -49,7 +50,8 @@ const paris = [
     description:
       "Situé près des quais de Seine, à 6 minutes à pied de la station de métro Charles Michels, cet appart'hôtel du 15e arrondissement est installé dans un immeuble moderne doté d'un hall vitré. Il se trouve à 1 km de la tour Eiffel.",
     photo_url: "https://www.ahstatic.com/photos/6790_ho_00_p_1024x768.jpg",
-    link: "https://www.adagio-city.com/fr/hotel-6790-aparthotel-adagio-paris-centre-tour-eiffel/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNTkyODctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
+    link_url:
+      "https://www.adagio-city.com/fr/hotel-6790-aparthotel-adagio-paris-centre-tour-eiffel/index.shtml?utm_source=googleMaps&utm_medium=seoMaps&utm_campaign=seoMaps&y_source=1_MTUzNTkyODctNzE1LWxvY2F0aW9uLndlYnNpdGU%3D",
     distance: "1km",
   },
   {
@@ -61,7 +63,7 @@ const paris = [
       "Cet hôtel simple du 15e arrondissement se trouve à 5 minutes de marche de la station de métro Dupleix, à 16 minutes à pied de la tour Eiffel et à 1,7 km des jardins du Trocadéro.",
     photo_url:
       "https://eiffel-saint-charles-hotel-paris.hotelmix.fr/data/Photos/OriginalPhoto/12739/1273936/1273936000/Hotel-Eiffel-Saint-Charles-Paris-Exterior.JPEG",
-    link: "https://www.hotel-eiffel-saint-charles.com/fr/",
+    link_url: "https://www.hotel-eiffel-saint-charles.com/fr/",
     distance: "1km",
   },
 ];

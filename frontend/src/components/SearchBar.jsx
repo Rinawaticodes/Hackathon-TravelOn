@@ -2,7 +2,7 @@ import beach from "../assets/beach.jpeg";
 
 function SearchBar() {
   return (
-    <div className="Hero">
+    <div className="hero">
       <img src={beach} alt="" />
       <div className="heroText">
         <h1>Keep Wild and Travel On</h1>

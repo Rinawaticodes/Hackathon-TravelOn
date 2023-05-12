@@ -10,6 +10,9 @@
   box-shadow: inherit;
   border: 2px solid black;
 }
+.cardHeader {
+  border: 2px solid red;
+}
 /* Root*/
 * {
   margin: 0;
@@ -52,11 +55,9 @@
   cursor: pointer;
   text-decoration: none;
 }
-.cardHeader {
-  border: 2px solid red;
-}
+
 /*background image */
-.Hero {
+.hero {
   width: 100%;
   height: 30%;
   position: relative;
@@ -106,17 +107,28 @@ input {
   color: black;
   height: 30px;
 }
+button {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  border: none;
+  color: white;
+  background-color: #4361ee;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+}
 
-/* Navbar*/
-.header {
-  width: 100%;
+/*Hotel Populaire*/
+.triptext {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .triptext h1 {
   font-size: 3rem;
+  padding-top: 2rem;
 }
 .tripCard {
   display: grid;

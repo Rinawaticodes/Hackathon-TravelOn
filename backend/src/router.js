@@ -4,7 +4,7 @@ const router = express.Router();
 
 const itemControllers = require("./controllers/itemControllers");
 
-const hotelList = [
+const paris = [
   {
     id: 1,
     name: "BEST WESTERN AU TROCADERO",
@@ -64,6 +64,9 @@ const hotelList = [
     link: "https://www.hotel-eiffel-saint-charles.com/fr/",
     distance: "1km",
   },
+];
+
+const rome = [
   {
     id: 6,
     name: "INN AT THE ROMAN FORUM, THE",
@@ -126,7 +129,7 @@ const hotelList = [
     note: "4 étoiles",
     description:
       "Entouré de trattorias traditionnelles et de bars à vins, l'Hotel Capo d'Africa est un luxueux établissement situé à seulement 5 minutes à pied du Colisée. Il propose le petit-déjeuner, mais aussi des boissons et des collations, que vous pourrez déguster sur le toit-terrasse.",
-    photo:
+    photo_url:
       "https://cf.bstatic.com/xdata/images/hotel/max1280x900/36075805.jpg?k=179f6593ce0aee24ef15e130bbd28e7ae497d5f1d422d977b99cd1463eeaed5d&o=&hp=1",
     link_url: "https://www.hotelcapodafrica.com/fr/",
   },
@@ -148,11 +151,14 @@ const hotelList = [
   },
 ];
 
-router.get("/", (req, res) => {
-  res.json(hotelList);
+router.get("/paris", (req, res) => {
+  res.json(paris);
+});
+router.get("/rome", (req, res) => {
+  res.json(rome);
 });
 router.get("/", (req, res) => {
-  res.json([]);
+  res.json([...rome, ...paris]);
 });
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);

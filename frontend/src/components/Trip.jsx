@@ -1,53 +1,30 @@
-import trip from "../assets/maldive_beach.jpeg";
-import italie from "../assets/italie.jpeg";
-import santorini from "../assets/santorini.jpeg";
+import PropTypes from "prop-types";
 
-function Trip() {
-  return (
-    <div className="trip">
-      <div className="triptext">
-        <h1>Ville Populaire</h1>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel
-          necessitatibus illum ducimus excepturi molestias, quasi culpa quisquam
-          sunt incidunt, ex quo veritatis eos nihil aliquid esse harum at
-          tenetur maxime?
-        </p>
-      </div>
-      <div className="tripCard">
-        <div className="tripBox">
-          <img src={trip} alt="" />
-          <h2>Maldives</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis
-            eos magni neque est quo! Atque totam voluptate illum! Veniam sint
-            eaque enim officiis reiciendis, beatae vero nulla voluptatem
-            deleniti?
-          </p>
+function Trip({ cityDatas }) {
+  return cityDatas.map((cityData) => (
+    <li key={cityData.id}>
+      <figure className="tripBox">
+        <figcaption>{cityData.name}</figcaption>
+        <img src={cityData.photo_url} alt={cityData.name} />
+        <div>
+          <p>Vous ète à {cityData.distance} de afiche le input</p> <br />
+          <p>{cityData.description}</p> <br />
+          <button type="button">Reservation</button>
         </div>
-        <div className="tripBox1">
-          <img src={italie} alt="" />
-          <h2>Italie</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis
-            eos magni neque est quo! Atque totam voluptate illum! Veniam sint
-            eaque enim officiis reiciendis, beatae vero nulla voluptatem
-            deleniti?
-          </p>
-        </div>
-        <div className="tripBox2">
-          <img src={santorini} alt="" />
-          <h2>Greek</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, omnis
-            eos magni neque est quo! Atque totam voluptate illum! Veniam sint
-            eaque enim officiis reiciendis, beatae vero nulla voluptatem
-            deleniti?
-          </p>
-        </div>
-      </div>
-    </div>
-  );
+      </figure>
+    </li>
+  ));
 }
+
+Trip.propTypes = {
+  cityDatas: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    photo_url: PropTypes.string,
+    distance: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+    map: PropTypes.func.isRequired,
+  }).isRequired,
+};
 
 export default Trip;

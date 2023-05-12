@@ -3,7 +3,7 @@ function Footer() {
     <div className="footer">
       <div className="top">
         <h1>TravelON</h1>
-        <p>Choissiez votre destination favorite.</p>
+        <p>Choisissez votre destination favorite</p>
       </div>
       <div className="socialmedia">
         <a href="/">

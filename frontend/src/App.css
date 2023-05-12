@@ -63,7 +63,7 @@ img {
   transform: translate(-50%, -50%);
 }
 .heroText h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -110,7 +110,18 @@ button {
   transition: 0.3s ease-in-out;
 }
 
-/*Hotel Populaire*/
+.buttonSearchBar {
+  background-color: aqua;
+  border-radius: 1rem;
+}
+
+.trip {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
 .triptext {
   display: flex;
   flex-direction: column;
@@ -124,38 +135,27 @@ button {
 .tripCard {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  padding-top: 2rem;
+  grid-gap: 30px;
+  padding: 2rem 2rem;
+  list-style: none;
 }
-
 .tripBox {
   background-color: #f2f2f2;
-  padding: 20px;
+  padding: 2rem;
 }
 
-.tripBox1 {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.tripBox2 {
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.tripCard img {
+.tripBox img {
   width: 100%;
   height: auto;
+  padding-top: 1rem;
 }
-
-.tripBox h2 {
-  margin-top: 10px;
+.tripBox figcaption {
+  text-align: center;
 }
-
 .tripBox p {
   margin-top: 10px;
+  text-align: justify;
 }
-
 /*footer*/
 .footer {
   padding: 4rem 6rem;
@@ -173,8 +173,11 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  color: white;
+  margin-left: 1rem;
+  font-size: 2rem;
 }
-.socialmedia {
+.socialmedia a i {
   color: white;
   margin-left: 1rem;
   font-size: 2rem;

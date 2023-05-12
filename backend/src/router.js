@@ -65,17 +65,15 @@ const hotelList = [
     distance: "1km",
   },
   {
-    id: "6",
+    id: 6,
     name: "INN AT THE ROMAN FORUM, THE",
     geoCode: {
       latitude: 41.89153,
       longitude: 12.49525,
     },
     address: "Via degli Ibernesi, 30, 00184 Roma RM, Italy",
-    distance: {
-      value: 0.3,
-      unit: "KM",
-    },
+    distance: "0,3km",
+
     note: "5 étoiles",
     description:
       "Situé au cœur de la Rome antique, l'établissement The Inn At The Roman Forum-Small Luxury Hotels se trouve à quelques pas du Colisée et du Forum romain. Il possède même des ruines. Une connexion Wi-Fi est disponible gratuitement dans toutes ses installations.",
@@ -85,17 +83,14 @@ const hotelList = [
       "https://www.theinnattheromanforum.com/en/?utm_source=google&utm_medium=cpc&utm_campaign=brand_en&utm_content=Suite",
   },
   {
-    id: "7",
+    id: 7,
     name: "MERCURE ROMA CENTRO COLOSSEO 4*",
     geoCode: {
       latitude: 41.89,
       longitude: 12.49812,
     },
     address: "Via Labicana, 144, 00184 Roma RM, Italy",
-    distance: {
-      value: 0.5,
-      unit: "KM",
-    },
+    distance: "0,5 km",
     note: "4 étoiles",
     description:
       "Doté d'un toit-terrasse et d'une piscine ouverte en saison avec vue sur le Colisée, le Mercure Roma Centro Colosseo propose des chambres modernes et une connexion Wi-Fi gratuite dans l'ensemble des locaux. Le Colisée est à 400 mètres.",
@@ -104,17 +99,14 @@ const hotelList = [
     link_url: "https://all.accor.com/hotel/2909/index.fr.shtml",
   },
   {
-    id: "8",
+    id: 8,
     name: "BETTOJA HOTEL MASSIMO D'AZEGLIO",
     geoCode: {
       latitude: 41.89459,
       longitude: 12.49284,
     },
     address: "Via Cavour, 18, 00185 Roma RM, Italy",
-    distance: {
-      value: 0.5,
-      unit: "KM",
-    },
+    distance: "0,5 km",
     note: "4 étoiles",
     description:
       "Datant de 1875, le Bettoja Hotel Massimo d’Azeglio vous accueille dans un élégant bâtiment situé à seulement 100 mètres de la gare de Rome-Termini et à 15 minutes à pied du Colisée. Cet établissement propose un restaurant et une cave à vin.",
@@ -123,17 +115,14 @@ const hotelList = [
     link_url: "https://www.romehoteldazeglio.it/fr",
   },
   {
-    id: "9",
+    id: 9,
     name: "HOTEL CAPO DAFRICA",
     geoCode: {
       latitude: 41.88829,
       longitude: 12.49767,
     },
     address: "Via Capo d'Africa, 54, 00184 Roma RM, Italy",
-    distance: {
-      value: 0.5,
-      unit: "KM",
-    },
+    distance: "0,5 km",
     note: "4 étoiles",
     description:
       "Entouré de trattorias traditionnelles et de bars à vins, l'Hotel Capo d'Africa est un luxueux établissement situé à seulement 5 minutes à pied du Colisée. Il propose le petit-déjeuner, mais aussi des boissons et des collations, que vous pourrez déguster sur le toit-terrasse.",
@@ -142,17 +131,14 @@ const hotelList = [
     link_url: "https://www.hotelcapodafrica.com/fr/",
   },
   {
-    id: "10",
+    id: 0,
     name: "HOTEL PALAZZO MANFREDI",
     geoCode: {
       latitude: 41.88973,
       longitude: 12.499,
     },
     address: "Via Labicana, 125, 00184 Roma RM, Italy",
-    distance: {
-      value: 0.6,
-      unit: "KM",
-    },
+    distance: "0,6 km",
     note: "5 étoiles",
     description:
       "L’Hotel Palazzo Manfredi – Relais & Chateaux dispose d’un toit-terrasse où vous pourrez savourer un petit-déjeuner tout en profitant de la vue imprenable sur le Colisée. Les hébergements spacieux incluent une connexion Wi-Fi gratuite et une télévision avec les chaînes du bouquet Sky.",
@@ -162,10 +148,12 @@ const hotelList = [
   },
 ];
 
-router.get("", (req, res) => {
+router.get("/", (req, res) => {
   res.json(hotelList);
 });
-
+router.get("/", (req, res) => {
+  res.json([]);
+});
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);

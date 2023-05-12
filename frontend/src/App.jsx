@@ -27,23 +27,35 @@ function App() {
   const hotel = hotelList[0];
 
   const [cityData, setCityData] = useState([]);
+  const [city, setCity] = useState("");
 
   useEffect(() => {
-    fetch(`http://localhost:5000/`)
+    fetch(`http://localhost:5000/${city}`)
       .then((resp) => resp.json())
       .then((data) => {
-        setCityData(data);
+        if (data) setCityData(data);
       });
-  }, []);
+  }, [city]);
   console.warn(cityData);
 
   return (
     <div className="App">
       <Navbar />
-      <SearchBar />
+      <SearchBar setCity={setCity} />
       <Trip />
       <Hotel />
       <Card hotel={hotel} />
+      {cityData.map((item) => (
+        <li key={item.id}>
+          <p>{item.name}</p>
+          <p>{item.adress}</p>
+          <p>{item.note}</p>
+          <p>{item.description}</p>
+          <p>{item.photo_url}</p>
+          <p>{item.link}</p>
+          <p>{item.distance}</p>
+        </li>
+      ))}
       <Footer />
     </div>
   );

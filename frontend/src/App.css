@@ -72,7 +72,7 @@ img {
   transform: translate(-50%, -50%);
 }
 .heroText h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -110,6 +110,10 @@ body {
   background-color: rgb(88, 134, 226);
 }
 
+.buttonSearchBar {
+  background-color: aqua;
+  border-radius: 1rem;
+}
 
 /* Navbar*/
 .header {

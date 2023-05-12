@@ -66,10 +66,12 @@ const Paris = [
   },
 ];
 
-router.get("", (req, res) => {
+router.get("/paris", (req, res) => {
   res.json(Paris);
 });
-
+router.get("/", (req, res) => {
+  res.json([]);
+});
 router.get("/items", itemControllers.browse);
 router.get("/items/:id", itemControllers.read);
 router.put("/items/:id", itemControllers.edit);

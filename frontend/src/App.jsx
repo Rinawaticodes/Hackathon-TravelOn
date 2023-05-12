@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./components/Card";
 import Hotel from "./pages/Hotel";
+import SearchBar from "./components/SearchBar";
 import Navbar from "./components/Navbar";
 import Trip from "./components/Trip";
 import SearchBar from "./components/SearchBar";
